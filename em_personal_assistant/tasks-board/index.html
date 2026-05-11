@@ -1807,129 +1807,130 @@ const POOL_SLACK = [
     "last_seen_at": "2026-05-11T09:06:01.461575+00:00"
   }
 ]; // injected
+const POOL_ADHOC = []; // injected — persisted via tasks_state.json
 const POOL_SKILLS = [
   {
     "name": "consolidate-memory",
     "description": "Reflective pass over your memory files — merge duplicates, fix stale facts, prune the index.",
     "plugin": null,
-    "path": "/sessions/sweet-relaxed-planck/mnt/.claude/skills/consolidate-memory/SKILL.md",
+    "path": "/sessions/youthful-affectionate-darwin/mnt/.claude/skills/consolidate-memory/SKILL.md",
     "is_default": true
   },
   {
     "name": "datadog-service-catalog-validator",
     "description": "Validate and fix FanDuel Datadog service.datadog.yaml files against the v2.2 Tag Baseline. Use when creating, editing, reviewing, or troubleshooting service.datadog.yaml files, or when the user mentions service catalog compliance, SCV validation, or tag baseline.",
     "plugin": null,
-    "path": "/sessions/sweet-relaxed-planck/mnt/.claude/skills/datadog-service-catalog-validator/SKILL.md",
+    "path": "/sessions/youthful-affectionate-darwin/mnt/.claude/skills/datadog-service-catalog-validator/SKILL.md",
     "is_default": false
   },
   {
     "name": "docx",
     "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.",
     "plugin": null,
-    "path": "/sessions/sweet-relaxed-planck/mnt/.claude/skills/docx/SKILL.md",
+    "path": "/sessions/youthful-affectionate-darwin/mnt/.claude/skills/docx/SKILL.md",
     "is_default": true
   },
   {
     "name": "pdf",
     "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
     "plugin": null,
-    "path": "/sessions/sweet-relaxed-planck/mnt/.claude/skills/pdf/SKILL.md",
+    "path": "/sessions/youthful-affectionate-darwin/mnt/.claude/skills/pdf/SKILL.md",
     "is_default": true
   },
   {
     "name": "pptx",
     "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \\\"deck,\\\" \\\"slides,\\\" \\\"presentation,\\\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.",
     "plugin": null,
-    "path": "/sessions/sweet-relaxed-planck/mnt/.claude/skills/pptx/SKILL.md",
+    "path": "/sessions/youthful-affectionate-darwin/mnt/.claude/skills/pptx/SKILL.md",
     "is_default": true
   },
   {
     "name": "quarterly-delivery-report",
     "description": "This skill should be used when the user asks to \"create the quarterly delivery report\", \"generate the Pentagon delivery report\", \"create a delivery report for the last 3 months\", \"make a Q1/Q2/Q3/Q4 delivery report\", or asks for a Confluence page summarising Pentagon's delivery, achievements, epics, and individual summaries for a given quarter. It pulls data from Jira, Slack, and Confluence to produce a full delivery report page in the SBK space.",
     "plugin": null,
-    "path": "/sessions/sweet-relaxed-planck/mnt/.claude/skills/quarterly-delivery-report/SKILL.md",
+    "path": "/sessions/youthful-affectionate-darwin/mnt/.claude/skills/quarterly-delivery-report/SKILL.md",
     "is_default": false
   },
   {
     "name": "roi-initiative-report",
     "description": "Generates a professional HTML Delivery ROI Report for one or more Jira initiatives (INITSB-XXXX format). Use this skill whenever the user asks to \"generate a ROI report\", \"create an initiative report\", \"ROI initiative report\", \"how much did this initiative cost\", \"what's the ROI of this initiative\", or pastes a Jira initiative link (fanduel.atlassian.net/browse/INITSB-XXXX). Also triggers when the user wants to measure the value or delivery cost of a completed initiative. Always use this skill for any ROI or delivery impact reporting request — even if the user just pastes a Jira URL and says \"generate the report\".",
     "plugin": null,
-    "path": "/sessions/sweet-relaxed-planck/mnt/.claude/skills/roi-initiative-report/SKILL.md",
+    "path": "/sessions/youthful-affectionate-darwin/mnt/.claude/skills/roi-initiative-report/SKILL.md",
     "is_default": false
   },
   {
     "name": "rt-strategy-kr1-updater",
     "description": "Updates the R&T '26 Strategy KR1 Confluence page with fresh metrics data for a given month. Use this skill whenever Sandra says \"actualiza o KR1\", \"update KR1 metrics\", \"vai buscar os dados de [month] para o KR1\", \"refresh the KR1 page\", \"update the strategy metrics\", or asks to pull SBK360 data and update the R&T strategy tracking page. This skill fetches Story Throughput from SBK360, Sprint Completion from SBK360, and updates the KR1 Confluence sub-page with real data + trends. Always use this skill for any request to update the R&T '26 Strategy KR1 metrics — even if the user just says \"actualiza os dados do mês\".",
     "plugin": null,
-    "path": "/sessions/sweet-relaxed-planck/mnt/.claude/skills/rt-strategy-kr1-updater/SKILL.md",
+    "path": "/sessions/youthful-affectionate-darwin/mnt/.claude/skills/rt-strategy-kr1-updater/SKILL.md",
     "is_default": false
   },
   {
     "name": "schedule",
     "description": "Create a scheduled task that can be run on demand or automatically on an interval.",
     "plugin": null,
-    "path": "/sessions/sweet-relaxed-planck/mnt/.claude/skills/schedule/SKILL.md",
+    "path": "/sessions/youthful-affectionate-darwin/mnt/.claude/skills/schedule/SKILL.md",
     "is_default": true
   },
   {
     "name": "setup-cowork",
     "description": "Guided Cowork setup — install role-matched plugins, connect your tools, try a skill.",
     "plugin": null,
-    "path": "/sessions/sweet-relaxed-planck/mnt/.claude/skills/setup-cowork/SKILL.md",
+    "path": "/sessions/youthful-affectionate-darwin/mnt/.claude/skills/setup-cowork/SKILL.md",
     "is_default": true
   },
   {
     "name": "skill-creator",
     "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
     "plugin": null,
-    "path": "/sessions/sweet-relaxed-planck/mnt/.claude/skills/skill-creator/SKILL.md",
+    "path": "/sessions/youthful-affectionate-darwin/mnt/.claude/skills/skill-creator/SKILL.md",
     "is_default": true
   },
   {
     "name": "tasks-board",
     "description": "Generates and refreshes the EM Hub dashboard (tasks_board.html) — Sandra Santos's personal Engineering Manager workspace aggregating live data from Outlook and Slack, with a Skills directory tab listing all installed Claude skills. Use this skill whenever Sandra says: \"update the tasks board\", \"refresh my tasks\", \"atualiza o tasks board\", \"sync tasks\", \"open tasks board\", \"abre o tasks board\", \"actualiza as tarefas\", \"o que tenho para fazer\", \"tasks board\", \"em hub\", \"abre o hub\", or when the scheduled daily refresh runs automatically at 10:00. The skill fetches genuinely actionable unread emails, finds unanswered Slack DMs, and writes a fully self-contained HTML dashboard with two tabs: (1) Tasks Board — Kanban with three columns (Ad Hoc tasks, Slack DMs, Emails); (2) Skills — directory of all locally installed Claude skills with name and description. The file is ALWAYS the same file — state is preserved across refreshes.",
     "plugin": null,
-    "path": "/sessions/sweet-relaxed-planck/mnt/.claude/skills/tasks-board/SKILL.md",
+    "path": "/sessions/youthful-affectionate-darwin/mnt/.claude/skills/tasks-board/SKILL.md",
     "is_default": false
   },
   {
     "name": "team-pulse",
     "description": "Generates the Pentagon Team Pulse report in Confluence. Use this skill whenever the user says \"create the team pulse\", \"gera o team pulse\", \"cria o report do manager\", \"team pulse report\", \"cria o report para o meu manager\", or asks to create a periodic team health/status report covering delivery, people, AI adoption, risks, and other topics. The skill collects information section by section, automatically fetches initiative details from Jira links provided, and publishes a structured, visually rich Confluence page in the Pentagon Reports folder of the user's personal space.",
     "plugin": null,
-    "path": "/sessions/sweet-relaxed-planck/mnt/.claude/skills/team-pulse/SKILL.md",
+    "path": "/sessions/youthful-affectionate-darwin/mnt/.claude/skills/team-pulse/SKILL.md",
     "is_default": false
   },
   {
     "name": "xlsx",
     "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \\\"the xlsx in my downloads\\\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
     "plugin": null,
-    "path": "/sessions/sweet-relaxed-planck/mnt/.claude/skills/xlsx/SKILL.md",
+    "path": "/sessions/youthful-affectionate-darwin/mnt/.claude/skills/xlsx/SKILL.md",
     "is_default": true
   },
   {
     "name": "cowork-plugin-customizer",
     "description": "Customize a Claude Code plugin for a specific organization's tools and workflows. Use when: customize plugin, set up plugin, configure plugin, tailor plugin, adjust plugin settings, customize plugin connectors, customize plugin skill, tweak plugin, modify plugin configuration.",
     "plugin": "plugin_0155zZVATbJU3jHUmPP9NvMC",
-    "path": "/sessions/sweet-relaxed-planck/mnt/.remote-plugins/plugin_0155zZVATbJU3jHUmPP9NvMC/skills/cowork-plugin-customizer/SKILL.md",
+    "path": "/sessions/youthful-affectionate-darwin/mnt/.remote-plugins/plugin_0155zZVATbJU3jHUmPP9NvMC/skills/cowork-plugin-customizer/SKILL.md",
     "is_default": true
   },
   {
     "name": "create-cowork-plugin",
     "description": "Guide users through creating a new plugin from scratch in a cowork session. Use when users want to create a plugin, build a plugin, make a new plugin, develop a plugin, scaffold a plugin, start a plugin from scratch, or design a plugin. This skill requires Cowork mode with access to the outputs directory for delivering the final .plugin file.",
     "plugin": "plugin_0155zZVATbJU3jHUmPP9NvMC",
-    "path": "/sessions/sweet-relaxed-planck/mnt/.remote-plugins/plugin_0155zZVATbJU3jHUmPP9NvMC/skills/create-cowork-plugin/SKILL.md",
+    "path": "/sessions/youthful-affectionate-darwin/mnt/.remote-plugins/plugin_0155zZVATbJU3jHUmPP9NvMC/skills/create-cowork-plugin/SKILL.md",
     "is_default": true
   },
   {
     "name": "pentagon-metrics-report",
     "description": "This skill should be used when the user asks to \"generate the Pentagon metrics report\", \"update the Pentagon metrics page\", \"run the monthly metrics retro\", \"create the Pentagon metrics review\", or asks to update the Confluence page with team metrics for the Pentagon team. It orchestrates pulling Jira data and creating a new monthly Confluence page with the last 3 months of engineering metrics.",
     "plugin": "plugin_015TnRiub9uLcW1tYUESUJiN",
-    "path": "/sessions/sweet-relaxed-planck/mnt/.remote-plugins/plugin_015TnRiub9uLcW1tYUESUJiN/skills/pentagon-metrics-report/SKILL.md",
+    "path": "/sessions/youthful-affectionate-darwin/mnt/.remote-plugins/plugin_015TnRiub9uLcW1tYUESUJiN/skills/pentagon-metrics-report/SKILL.md",
     "is_default": false
   }
 ]; // injected
-const STORAGE_KEY_VERSION = 55;
-const LAST_SYNCED = "2026-05-11T09:06:01.461649+00:00";
+const STORAGE_KEY_VERSION = 57;
+const LAST_SYNCED = "2026-05-11T15:09:53.643058+00:00";
 // FIXED key — never rotates, so ad-hoc tasks and user state survive every refresh.
 const STORAGE_KEY = 'tasks_board_state';
 
@@ -1953,7 +1954,16 @@ function loadState(){
     const raw = localStorage.getItem(STORAGE_KEY);
     if(raw){
       const parsed = JSON.parse(raw);
-      if(parsed && (parsed.items || parsed.adhoc)) return parsed;
+      if(parsed && (parsed.items || parsed.adhoc)) {
+        // Merge injected POOL_ADHOC with localStorage — POOL_ADHOC wins for existing refs
+        // so tasks added/edited in another browser are synced in
+        const localRefs = new Set((parsed.adhoc||[]).map(a=>a.source_ref));
+        const injectedNew = (POOL_ADHOC||[]).filter(a=>!localRefs.has(a.source_ref));
+        if(injectedNew.length > 0){
+          parsed.adhoc = [...(parsed.adhoc||[]), ...injectedNew];
+        }
+        return parsed;
+      }
     }
     for(let v = STORAGE_KEY_VERSION; v >= 0; v--){
       const legacy = localStorage.getItem('tasks_board_v' + v);
@@ -1965,7 +1975,8 @@ function loadState(){
       }
     }
   }catch(e){}
-  return defaultState();
+  // No localStorage at all — seed from injected POOL_ADHOC (e.g. GitHub Pages first load)
+  return {items:{}, adhoc: POOL_ADHOC || []};
 }
 function saveState(s){ try{ localStorage.setItem(STORAGE_KEY,JSON.stringify(s)); }catch(e){} }
 let ST = loadState();
